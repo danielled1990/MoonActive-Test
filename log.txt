@@ -1,0 +1,262 @@
+2021-04-01 18:56:04: Waiting for a car to show
+2021-04-01 18:56:07: New car arrived
+2021-04-01 18:56:07: getting the plate number
+2021-04-01 18:56:09: got the plate number20-260-22
+2021-04-01 18:56:09:20-260-22 - checking if license plate is valid
+2021-04-01 18:56:09:20-260-22 - return code is:2
+2021-04-01 18:56:09: Waiting for a car to show
+2021-04-01 18:56:17: New car arrived
+2021-04-01 18:56:17: getting the plate number
+2021-04-01 18:56:18: got the plate numberERAÉ87TL
+2021-04-01 18:56:18:ERAÉ87TL - checking if license plate is valid
+2021-04-01 18:56:18:ERAÉ87TL - return code is:1
+2021-04-01 18:56:18: Waiting for a car to show
+2021-04-01 18:56:28: New car arrived
+2021-04-01 18:56:28: getting the plate number
+2021-04-01 18:56:29: got the plate numberGD 24560
+2021-04-01 18:56:29:GD 24560 - checking if license plate is valid
+2021-04-01 18:56:29:GD 24560 - return code is:3
+2021-04-01 18:56:29:GD 24560 - car license plate is valid, opening door...
+2021-04-01 18:56:29: Waiting for a car to show
+2021-04-01 18:56:36: New car arrived
+2021-04-01 18:56:36: getting the plate number
+2021-04-01 18:56:37: Unable to recognize the file type
+Unable to detect the file extension, or the file extension is incorrect, and no 'file type' provided in request. Please provide a file with a proper content type or extension, or provide a file type in the request to manually set the file extension.
+
+2021-04-01 18:56:37: Waiting for a car to show
+2021-04-01 18:56:42: New car arrived
+2021-04-01 18:56:42: getting the plate number
+2021-04-01 18:56:42: got the plate numberGR-PLATE6
+2021-04-01 18:56:42:GR-PLATE6 - checking if license plate is valid
+2021-04-01 18:56:42:GR-PLATE6 - return code is:0
+2021-04-01 18:56:42: Waiting for a car to show
+2021-04-01 18:57:08: New car arrived
+2021-04-01 18:57:08: getting the plate number
+2021-04-01 18:57:09:GR-PLATE6 - checking if license plate is valid
+2021-04-01 18:57:16: Waiting for a car to show
+2021-04-01 18:57:19: New car arrived
+2021-04-01 18:57:19: getting the plate number
+2021-04-01 18:57:25: got the plate numberGR-PLATE6
+2021-04-01 18:57:25:GR-PLATE6 - checking if license plate is valid
+2021-04-01 18:57:25:GR-PLATE6 - return code is:0
+2021-04-01 18:57:25: Waiting for a car to show
+2021-04-01 19:02:50: Waiting for a car to show
+2021-04-01 19:02:57: New car arrived
+2021-04-01 19:02:57: getting the plate number
+2021-04-01 19:03:00: got the plate number20-260-22
+2021-04-01 19:03:00:20-260-22 - checking if license plate is valid
+2021-04-01 19:03:00:20-260-22 - return code is:2
+2021-04-01 19:03:00:20-260-22 - Code:2, You do not have any letters on your license plate - you cannot enter the parking lot.
+2021-04-01 19:03:00: Waiting for a car to show
+2021-04-01 19:03:11: New car arrived
+2021-04-01 19:03:11: getting the plate number
+2021-04-01 19:03:13: got the plate numberGD 24560
+2021-04-01 19:03:13:GD 24560 - checking if license plate is valid
+2021-04-01 19:03:13:GD 24560 - return code is:3
+2021-04-01 19:03:13:GD 24560 - car license plate is valid, opening door...
+2021-04-01 19:03:13: Waiting for a car to show
+2021-04-01 19:03:22: New car arrived
+2021-04-01 19:03:22: getting the plate number
+2021-04-01 19:03:23: got the plate numberGR-PLATE6
+2021-04-01 19:03:23:GR-PLATE6 - checking if license plate is valid
+2021-04-01 19:03:23:GR-PLATE6 - return code is:0
+2021-04-01 19:03:23:GR-PLATE6 - Code:0, Public transportation vehicle - you cannot enter the parking lot.
+2021-04-01 19:03:23: Waiting for a car to show
+2021-04-01 19:03:30: New car arrived
+2021-04-01 19:03:30: getting the plate number
+2021-04-01 19:03:31: got the plate numberERAÉ87TL
+2021-04-01 19:03:31:ERAÉ87TL - checking if license plate is valid
+2021-04-01 19:03:31:ERAÉ87TL - return code is:1
+2021-04-01 19:03:31:ERAÉ87TL - Code:1, Law enforcement vehicle - you cannot enter the parking lot.
+2021-04-01 19:03:31: Waiting for a car to show
+2021-04-01 19:03:34: New car arrived
+2021-04-01 19:03:34: getting the plate number
+2021-04-01 19:03:34: Unable to recognize the file type
+Unable to detect the file extension, or the file extension is incorrect, and no 'file type' provided in request. Please provide a file with a proper content type or extension, or provide a file type in the request to manually set the file extension.
+
+2021-04-01 19:03:34: Waiting for a car to show
+2021-04-01 19:03:40: New car arrived
+2021-04-01 19:03:40: getting the plate number
+2021-04-01 19:03:41: Unable to recognize the file type
+Unable to detect the file extension, or the file extension is incorrect, and no 'file type' provided in request. Please provide a file with a proper content type or extension, or provide a file type in the request to manually set the file extension.
+
+2021-04-01 19:03:41: Waiting for a car to show
+2021-04-01 19:03:43: New car arrived
+2021-04-01 19:03:43: getting the plate number
+2021-04-01 19:03:44: Unable to recognize the file type
+Unable to detect the file extension, or the file extension is incorrect, and no 'file type' provided in request. Please provide a file with a proper content type or extension, or provide a file type in the request to manually set the file extension.
+
+2021-04-01 19:03:44: Waiting for a car to show
+2021-04-01 19:11:13: Waiting for a car to show
+2021-04-01 19:11:20: New car arrived
+2021-04-01 19:11:20: processing the plate number
+2021-04-01 19:11:51: Waiting for a car to show
+2021-04-01 19:11:57: Waiting for a car to show
+2021-04-01 19:12:16: New car arrived
+2021-04-01 19:12:16: processing the plate number
+2021-04-01 19:13:49: Waiting for a car to show
+2021-04-01 19:13:54: Waiting for a car to show
+2021-04-01 19:14:02: New car arrived
+2021-04-01 19:14:02: processing the plate number
+2021-04-01 19:16:02: Waiting for a car to show
+2021-04-01 19:16:08: Waiting for a car to show
+2021-04-01 19:16:19: New car arrived
+2021-04-01 19:16:19: processing the plate number
+2021-04-01 19:17:42: Waiting for a car to show
+2021-04-01 19:17:47: Waiting for a car to show
+2021-04-01 19:17:59: New car arrived
+2021-04-01 19:17:59: processing the plate number
+2021-04-01 19:18:19:null - checking if license plate is valid
+2021-04-01 19:18:31: Waiting for a car to show
+2021-04-01 19:18:41: New car arrived
+2021-04-01 19:18:41: processing the plate number
+2021-04-01 19:19:14:null - checking if license plate is valid
+2021-04-01 19:22:17: Waiting for a car to show
+2021-04-01 19:22:24: New car arrived
+2021-04-01 19:22:24: processing the plate number
+2021-04-01 19:22:40:null - checking if license plate is valid
+2021-04-01 19:25:48: Waiting for a car to show
+2021-04-01 19:25:53: New car arrived
+2021-04-01 19:25:53: processing the plate number
+2021-04-01 19:26:07:null - checking if license plate is valid
+2021-04-01 19:26:17: Waiting for a car to show
+2021-04-01 19:26:24: New car arrived
+2021-04-01 19:26:24: processing the plate number
+2021-04-01 19:26:52:null - checking if license plate is valid
+2021-04-01 19:26:55: Waiting for a car to show
+2021-04-01 19:27:04: New car arrived
+2021-04-01 19:27:04: processing the plate number
+2021-04-01 19:27:15:null - checking if license plate is valid
+2021-04-01 19:27:20: Waiting for a car to show
+2021-04-01 19:27:24: New car arrived
+2021-04-01 19:27:24: processing the plate number
+2021-04-01 19:28:05:null - checking if license plate is valid
+2021-04-01 19:28:09: Waiting for a car to show
+2021-04-01 19:28:18: New car arrived
+2021-04-01 19:28:18: processing the plate number
+2021-04-01 19:28:25: response code is not 200 it is:404
+2021-04-01 19:28:43: Waiting for a car to show
+2021-04-01 19:38:45: Waiting for a car to show
+2021-04-01 19:38:46: New car arrived
+2021-04-01 19:38:46: processing the plate number
+2021-04-01 19:38:48: response code is not 200 it is:404
+2021-04-01 19:38:48: Waiting for a car to show
+2021-04-01 19:39:08: Waiting for a car to show
+2021-04-01 19:39:11: New car arrived
+2021-04-01 19:39:11: processing the plate number
+2021-04-01 19:39:23: Waiting for a car to show
+2021-04-01 19:39:25: New car arrived
+2021-04-01 19:39:25: processing the plate number
+2021-04-01 19:39:36: Waiting for a car to show
+2021-04-01 19:39:40: Waiting for a car to show
+2021-04-01 19:39:46: Waiting for a car to show
+2021-04-01 19:39:49: New car arrived
+2021-04-01 19:39:49: processing the plate number
+2021-04-01 19:40:08: Waiting for a car to show
+2021-04-01 19:40:12: New car arrived
+2021-04-01 19:40:14: processing the plate number
+2021-04-01 19:40:38: got the plate number20-260-22
+2021-04-01 19:40:41:20-260-22 - checking if license plate is valid
+2021-04-01 19:40:41:20-260-22 - return code is:2
+2021-04-01 19:40:41:20-260-22 - Code:2, You do not have any letters on your license plate - you cannot enter the parking lot.
+2021-04-01 19:40:41: Waiting for a car to show
+2021-04-01 19:40:56: Waiting for a car to show
+2021-04-01 19:41:03: New car arrived
+2021-04-01 19:41:03: processing the plate number
+2021-04-01 19:41:08: got the plate number20-260-22
+2021-04-01 19:41:08:20-260-22 - checking if license plate is valid
+2021-04-01 19:41:08:20-260-22 - return code is:2
+2021-04-01 19:41:08:20-260-22 - Code:2, You do not have any letters on your license plate - you cannot enter the parking lot.
+2021-04-01 19:41:08: Waiting for a car to show
+2021-04-01 19:41:12: New car arrived
+2021-04-01 19:41:12: processing the plate number
+2021-04-01 19:41:14: got the plate numberERAÉ87TL
+2021-04-01 19:41:14:ERAÉ87TL - checking if license plate is valid
+2021-04-01 19:41:14:ERAÉ87TL - return code is:1
+2021-04-01 19:41:14:ERAÉ87TL - Code:1, Law enforcement vehicle - you cannot enter the parking lot.
+2021-04-01 19:41:14: Waiting for a car to show
+2021-04-01 19:41:19: New car arrived
+2021-04-01 19:41:19: processing the plate number
+2021-04-01 19:41:21: got the plate numberGD 24560
+2021-04-01 19:41:21:GD 24560 - checking if license plate is valid
+2021-04-01 19:41:21:GD 24560 - return code is:3
+2021-04-01 19:41:21:GD 24560 - car license plate is valid, opening door...
+2021-04-01 19:41:21: Waiting for a car to show
+2021-04-01 19:41:30: New car arrived
+2021-04-01 19:41:30: processing the plate number
+2021-04-01 19:41:31: Unable to recognize the file type
+Unable to detect the file extension, or the file extension is incorrect, and no 'file type' provided in request. Please provide a file with a proper content type or extension, or provide a file type in the request to manually set the file extension.
+
+2021-04-01 19:41:31: Waiting for a car to show
+2021-04-01 19:41:35: New car arrived
+2021-04-01 19:41:35: processing the plate number
+2021-04-01 19:41:35: got the plate numberGR-PLATE6
+2021-04-01 19:41:35:GR-PLATE6 - checking if license plate is valid
+2021-04-01 19:41:35:GR-PLATE6 - return code is:0
+2021-04-01 19:41:35:GR-PLATE6 - Code:0, Public transportation vehicle - you cannot enter the parking lot.
+2021-04-01 19:41:35: Waiting for a car to show
+2021-04-01 19:41:40: New car arrived
+2021-04-01 19:41:40: processing the plate number
+2021-04-01 19:41:41: Unable to recognize the file type
+Unable to detect the file extension, or the file extension is incorrect, and no 'file type' provided in request. Please provide a file with a proper content type or extension, or provide a file type in the request to manually set the file extension.
+
+2021-04-01 19:41:41: Waiting for a car to show
+2021-04-01 19:41:42: New car arrived
+2021-04-01 19:41:42: processing the plate number
+2021-04-01 19:41:42: Unable to recognize the file type
+Unable to detect the file extension, or the file extension is incorrect, and no 'file type' provided in request. Please provide a file with a proper content type or extension, or provide a file type in the request to manually set the file extension.
+
+2021-04-01 19:41:42: Waiting for a car to show
+2021-04-01 19:41:46: New car arrived
+2021-04-01 19:41:46: processing the plate number
+2021-04-01 19:41:47: got the plate numberGR-PLATE6
+2021-04-01 19:41:47:GR-PLATE6 - checking if license plate is valid
+2021-04-01 19:41:47:GR-PLATE6 - return code is:0
+2021-04-01 19:41:47:GR-PLATE6 - Code:0, Public transportation vehicle - you cannot enter the parking lot.
+2021-04-01 19:41:47: Waiting for a car to show
+2021-04-01 19:42:33: Waiting for a car to show
+2021-04-01 19:42:38: New car arrived
+2021-04-01 19:42:38: processing the plate number
+2021-04-01 19:42:40: response code is not 200 it is:200
+2021-04-01 19:42:40: Waiting for a car to show
+2021-04-01 19:42:40: New car arrived
+2021-04-01 19:42:40: processing the plate number
+2021-04-01 19:42:41: response code is not 200 it is:200
+2021-04-01 19:42:41: Waiting for a car to show
+2021-04-01 19:42:57: New car arrived
+2021-04-01 19:42:57: processing the plate number
+2021-04-01 19:42:58: response code is not 200 it is:200
+2021-04-01 19:42:58: Waiting for a car to show
+2021-04-01 19:43:00: New car arrived
+2021-04-01 19:43:00: processing the plate number
+2021-04-01 19:43:01: response code is not 200 it is:200
+2021-04-01 19:43:01: Waiting for a car to show
+2021-04-01 19:43:46: Waiting for a car to show
+2021-04-01 19:43:52: New car arrived
+2021-04-01 19:43:52: processing the plate number
+2021-04-01 19:43:54: got the plate number20-260-22
+2021-04-01 19:43:54:20-260-22 - checking if license plate is valid
+2021-04-01 19:43:54:20-260-22 - return code is:2
+2021-04-01 19:43:54:20-260-22 - Code:2, You do not have any letters on your license plate - you cannot enter the parking lot.
+2021-04-01 19:43:54: Waiting for a car to show
+2021-04-01 19:44:12: New car arrived
+2021-04-01 19:44:12: processing the plate number
+2021-04-01 19:44:13: got the plate numberERAÉ87TL
+2021-04-01 19:44:13:ERAÉ87TL - checking if license plate is valid
+2021-04-01 19:44:13:ERAÉ87TL - return code is:1
+2021-04-01 19:44:13:ERAÉ87TL - Code:1, Law enforcement vehicle - you cannot enter the parking lot.
+2021-04-01 19:44:13: Waiting for a car to show
+2021-04-01 19:44:19: New car arrived
+2021-04-01 19:44:19: processing the plate number
+2021-04-01 19:44:21: got the plate numberGD 24560
+2021-04-01 19:44:21:GD 24560 - checking if license plate is valid
+2021-04-01 19:44:21:GD 24560 - return code is:3
+2021-04-01 19:44:21:GD 24560 - car license plate is valid, opening door...
+2021-04-01 19:44:21: Waiting for a car to show
+2021-04-01 19:44:26: New car arrived
+2021-04-01 19:44:26: processing the plate number
+2021-04-01 19:44:27: got the plate numberGR-PLATE6
+2021-04-01 19:44:27:GR-PLATE6 - checking if license plate is valid
+2021-04-01 19:44:27:GR-PLATE6 - return code is:0
+2021-04-01 19:44:27:GR-PLATE6 - Code:0, Public transportation vehicle - you cannot enter the parking lot.
+2021-04-01 19:44:27: Waiting for a car to show

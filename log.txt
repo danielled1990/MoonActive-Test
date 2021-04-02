@@ -35,3 +35,81 @@
 2021-04-02 13:10:54: processing the plate number
 2021-04-02 13:17:28: we are unable to get the licence plate, please try again later
 2021-04-02 13:17:28: Waiting for a car to show
+2021-04-02 13:39:48: Waiting for a car to show
+2021-04-02 13:39:55: New car arrived
+2021-04-02 13:39:55: processing the plate number
+2021-04-02 13:39:55: processing the plate number
+2021-04-02 13:39:57: we are unable to get the licence plate, please try again later
+2021-04-02 13:39:57: Waiting for a car to show
+2021-04-02 13:41:24: Waiting for a car to show
+2021-04-02 13:41:28: New car arrived
+2021-04-02 13:41:28: processing the plate number
+2021-04-02 13:41:28: processing the plate number
+2021-04-02 13:41:29: we are unable to get the licence plate, please try again later
+2021-04-02 13:41:29: Waiting for a car to show
+2021-04-02 13:41:40: New car arrived
+2021-04-02 13:41:40: processing the plate number
+2021-04-02 13:41:42: processing the plate number
+2021-04-02 13:41:44: we are unable to get the licence plate, please try again later
+2021-04-02 13:42:11: processing the plate number
+2021-04-02 13:42:30: Waiting for a car to show
+2021-04-02 13:42:40: processing the plate number
+2021-04-02 13:43:38: processing the plate number
+2021-04-02 14:06:49: processing the plate number
+2021-04-02 14:07:07: Waiting for a car to show
+2021-04-02 14:07:13: New car arrived
+2021-04-02 14:07:13: processing the plate number
+2021-04-02 14:07:17: processing the plate number
+2021-04-02 14:29:07: processing the plate number
+2021-04-02 14:30:39: Unable to recognize the file type
+Unable to detect the file extension, or the file extension is incorrect, and no 'file type' provided in request. Please provide a file with a proper content type or extension, or provide a file type in the request to manually set the file extension.
+
+2021-04-02 14:30:39: Waiting for a car to show
+2021-04-02 14:52:16: processing the plate number
+2021-04-02 14:52:35: processing the plate number
+2021-04-02 14:53:12: processing the plate number
+2021-04-02 14:53:50: processing the plate number
+2021-04-02 14:55:05: processing the plate number
+2021-04-02 14:56:49: processing the plate number
+2021-04-02 14:57:47: processing the plate number
+2021-04-02 14:58:21: processing the plate number
+2021-04-02 14:58:39: processing the plate number
+2021-04-02 15:12:27: Waiting for a car to show
+2021-04-02 15:12:34: New car arrived
+2021-04-02 15:12:34: processing the plate number
+2021-04-02 15:12:34: processing the plate number
+2021-04-02 15:12:38: response code is not 200 it is:500
+2021-04-02 15:12:38: Waiting for a car to show
+2021-04-02 15:12:52: Waiting for a car to show
+2021-04-02 15:12:55: New car arrived
+2021-04-02 15:12:55: processing the plate number
+2021-04-02 15:12:58: processing the plate number
+2021-04-02 15:13:13: got the plate numberGD 24560
+2021-04-02 15:13:18:GD 24560 - checking if license plate is valid
+2021-04-02 15:13:18:GD 24560 - return code is:3
+2021-04-02 15:13:18:GD 24560 - car license plate is valid, opening door...
+2021-04-02 15:13:18: Waiting for a car to show
+2021-04-02 15:13:35: processing the plate number
+2021-04-02 15:15:47: processing the plate number
+2021-04-02 15:17:03: processing the plate number
+2021-04-02 15:17:48: processing the plate number
+2021-04-02 15:19:06: processing the plate number
+2021-04-02 15:19:37: processing the plate number
+2021-04-02 15:22:11: processing the plate number
+2021-04-02 15:23:19: processing the plate number
+2021-04-02 15:24:57: processing the plate number
+2021-04-02 15:28:40: processing the plate number
+2021-04-02 15:29:53: processing the plate number
+2021-04-02 15:32:21: processing the plate number
+2021-04-02 15:43:31: processing the plate number
+2021-04-02 15:51:15: processing the plate number
+2021-04-02 15:55:34: processing the plate number
+2021-04-02 15:58:41: processing the plate number
+2021-04-02 16:03:25: processing the plate number
+2021-04-02 16:04:14: processing the plate number
+2021-04-02 16:05:18: processing the plate number
+2021-04-02 16:05:40: processing the plate number
+2021-04-02 16:05:56: processing the plate number
+2021-04-02 16:06:06: processing the plate number
+2021-04-02 16:11:36: processing the plate number
+2021-04-02 16:11:54: processing the plate number

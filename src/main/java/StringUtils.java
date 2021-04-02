@@ -1,7 +1,7 @@
 public class StringUtils {
     //api
-//    public static String IMAGE_URL = "https://api.ocr.space/parse/imageurl?apikey=870a01303588957d&isOverlayRequired=true&url=";
-    public static String IMAGE_URL = "https://ap.ocr.space/imageurl?apikey=870a01303588957d&isOverlayRequired=true&url=";
+    public static String IMAGE_URL = "https://api.ocr.space/parse/imageurl?apikey=870a01303588957d&isOverlayRequired=true&url=";
+//    public static String IMAGE_URL = "https://api.ocr.space/imageurl?apikey=870a01303588957d&isOverlayRequired=true&url=";
     public static String API_KEY = "870a01303588957";
 
     ///CHECK VALIDATION_OF_CARS

@@ -14,6 +14,7 @@ public class GetTextFromImage {
     private URL url = null;
     private HttpsURLConnection con = null;
 
+
     public String getTextFromImageAPI(String imageURL) throws SomethingWrongExcepction {
         String lp = "";
         int responseCode=-1;
@@ -21,16 +22,7 @@ public class GetTextFromImage {
             Log.getInstance().WriteToLogFile("processing the plate number");
             responseCode = getResponseCode(imageURL);
             if (responseCode == HttpURLConnection.HTTP_OK) { // success
-                BufferedReader in = new BufferedReader(new InputStreamReader(
-                        con.getInputStream()));
-                String inputLine;
-                StringBuffer response = new StringBuffer();
-
-                while ((inputLine = in.readLine()) != null) {
-                    response.append(inputLine);
-                }
-                in.close();
-                JSONObject jsonObject = new JSONObject(response.toString());
+                JSONObject jsonObject = getJsonObject();
                 try {
                     JSONArray res = jsonObject.getJSONArray("ParsedResults");
                     JSONObject jsonObjectInsideArray = new JSONObject(res.get(0).toString());
@@ -66,11 +58,30 @@ public class GetTextFromImage {
     public int getResponseCode(String imageURL) throws IOException {
         Log.getInstance().WriteToLogFile("processing the plate number");
         url = getUrl(imageURL);
-        con = (HttpsURLConnection) url.openConnection();
+        con = getConnection(url);
         con.setRequestMethod("GET");
         con.setRequestProperty("User-Agent", "Mozilla/5.0");
         int responseCode = con.getResponseCode();
         return responseCode;
+    }
+
+    public JSONObject getJsonObject() throws IOException {
+        BufferedReader in = new BufferedReader(new InputStreamReader(
+                con.getInputStream()));
+        String inputLine;
+        StringBuffer response = new StringBuffer();
+
+        while ((inputLine = in.readLine()) != null) {
+            response.append(inputLine);
+        }
+        in.close();
+        JSONObject jsonObject = new JSONObject(response.toString());
+        return jsonObject;
+    }
+
+    public HttpsURLConnection getConnection(URL url) throws IOException {
+        con = (HttpsURLConnection) url.openConnection();
+        return con;
     }
 
     public URL getUrl(String imageURL) throws MalformedURLException {

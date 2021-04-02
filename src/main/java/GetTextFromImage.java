@@ -7,22 +7,19 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
 import java.net.URL;
 
 public class GetTextFromImage {
-
+    private URL url = null;
+    private HttpsURLConnection con = null;
 
     public String getTextFromImageAPI(String imageURL) throws SomethingWrongExcepction {
-        URL obj = null; // OCR API Endpoints
         String lp = "";
         int responseCode=-1;
         try {
             Log.getInstance().WriteToLogFile("processing the plate number");
-            obj = new URL(StringUtils.IMAGE_URL + imageURL);
-            HttpsURLConnection con = (HttpsURLConnection) obj.openConnection();
-            con.setRequestMethod("GET");
-            con.setRequestProperty("User-Agent", "Mozilla/5.0");
-            responseCode = con.getResponseCode();
+            responseCode = getResponseCode(imageURL);
             if (responseCode == HttpURLConnection.HTTP_OK) { // success
                 BufferedReader in = new BufferedReader(new InputStreamReader(
                         con.getInputStream()));
@@ -66,4 +63,18 @@ public class GetTextFromImage {
         return lp;
     }
 
+    public int getResponseCode(String imageURL) throws IOException {
+        Log.getInstance().WriteToLogFile("processing the plate number");
+        url = getUrl(imageURL);
+        con = (HttpsURLConnection) url.openConnection();
+        con.setRequestMethod("GET");
+        con.setRequestProperty("User-Agent", "Mozilla/5.0");
+        int responseCode = con.getResponseCode();
+        return responseCode;
+    }
+
+    public URL getUrl(String imageURL) throws MalformedURLException {
+        url = new URL(StringUtils.IMAGE_URL + imageURL);
+        return url;
+    }
 }

@@ -14,10 +14,6 @@ public class SQLHelper {
         try {
             Class.forName(SQL_DRIVER).newInstance();
             dbConnection = DriverManager.getConnection(StringUtils.SQL_DRIVER, USER, PASSWORD);
-            //        dbConnection = DriverManager.getConnection(SERVER_URL);
-
-         //   s = "ok";
-
         } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | SQLException e) {
             Log.WriteToLogFile(StringUtils.CANNOT_ACCESS_DB);
         }

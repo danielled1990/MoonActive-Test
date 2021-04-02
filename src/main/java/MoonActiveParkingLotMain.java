@@ -6,6 +6,7 @@ public class MoonActiveParkingLotMain {
     public static void main(String[] args) {
         while(true){
             try{
+
                 System.out.println(String.format("Welcome to Moon active parking lot!"));
 
                 InputStreamReader streamReader = new InputStreamReader(System.in);
@@ -25,6 +26,9 @@ public class MoonActiveParkingLotMain {
                 System.out.println(Log.getInstance().getlp()+" " +res.getResponse());
 
                 //ENTER TO DB
+                SQLHelper sqlSingelton = new SQLHelper();
+                sqlSingelton.init();
+                sqlSingelton.insertLPintoSQLTABLE(Log.getInstance().getlp(),res.getCan());
 
                 if(res.getCan()){
                     Log.WriteToLogFile(Log.getInstance().getlp(),"car license plate is valid, opening door...");

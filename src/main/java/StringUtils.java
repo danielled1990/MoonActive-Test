@@ -1,7 +1,6 @@
 public class StringUtils {
     //api
     public static String IMAGE_URL = "https://api.ocr.space/parse/imageurl?apikey=870a01303588957d&isOverlayRequired=true&url=";
-//    public static String IMAGE_URL = "https://api.ocr.space/imageurl?apikey=870a01303588957d&isOverlayRequired=true&url=";
     public static String API_KEY = "870a01303588957";
 
     ///CHECK VALIDATION_OF_CARS
@@ -22,5 +21,17 @@ public class StringUtils {
     public static final String NO_LETTERS = "You do not have any letters on your license plate";
     public static final String VALID_NUMBER = "You may enter the parking lot, have a great day!";
     public static final String CANNOT_ENTER = " - you cannot enter the parking lot.";
+
+
+
+    //sql
+    public static final String SQL_DRIVER = "jdbc:mysql://localhost:3306/lp_ma_schema";
+
+    //sql-log
+    public static final String CANNOT_ACCESS_DB = "cannot access the DB";
+    public static final String ERROR_WHEN_ENTERING_SQL = "Error when entrting the license plate";
+    public static final String NEW_ENTRY_TO_DB = "new entry on the DB for plate";
+
+
 
 }

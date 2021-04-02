@@ -1,4 +1,4 @@
-import com.fasterxml.jackson.databind.ObjectMapper;
+import StringForTests.StringForTets;
 import com.google.common.collect.MapDifference;
 import com.google.common.collect.Maps;
 import com.google.gson.Gson;
@@ -36,14 +36,23 @@ class GetTextFromImageTest {
     }
 
     @Test()
-    void test_checkResponseCode() throws IOException {
-        int responseCode = getTextFromImage.getResponseCode("https://i.imgur.com/Atb2xiW.png");
+    void test_checkResponseCode() {
+        int responseCode = 0;
+        try {
+            responseCode = getTextFromImage.getResponseCode(StringForTets.IMAGE_TEST_1);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         assertEquals(200, responseCode);
     }
 
     @Test()
-    void test_checkTimeOut() throws IOException {
-        HttpsURLConnection responseCode = getTextFromImage.getConnection(new URL(StringUtils.IMAGE_URL + "https://i.imgur.com/Atb2xiW.png"));
+    void test_checkTimeOut()  {
+        try {
+            HttpsURLConnection responseCode = getTextFromImage.getConnection(new URL(StringUtils.IMAGE_URL + "StringUtils.IMAGE_TEST_1"));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         assertTimeout(Duration.ofMillis(10000), () -> {
             System.out.println("Time out is too long");
         });
@@ -52,10 +61,10 @@ class GetTextFromImageTest {
     @Test()
     void test_checkURL() {
         try {
-            URL url = getTextFromImage.getUrl("https://i.imgur.com/Atb2xiW.png");
+            URL url = getTextFromImage.getUrl(StringForTets.IMAGE_TEST_1);
             Assert.assertThat(url.toString(), CoreMatchers.containsString("870a01303588957"));
             Assert.assertThat(url.toString(), CoreMatchers.containsString("apikey="));
-            Assert.assertThat(url.toString(), CoreMatchers.containsString("https://i.imgur.com/Atb2xiW.png"));
+            Assert.assertThat(url.toString(), CoreMatchers.containsString(StringForTets.IMAGE_TEST_1));
         } catch (MalformedURLException e) {
             //assertThat(me.getMessage(), containsString("whatever"));
 
@@ -64,25 +73,19 @@ class GetTextFromImageTest {
     }
     @Test
     void test_compareGoodJson() throws IOException {
-        getTextFromImage.getConnection(new URL(StringUtils.IMAGE_URL + "https://i.imgur.com/QYKhr34.gif"));
+        getTextFromImage.getConnection(new URL(StringUtils.IMAGE_URL + StringForTets.IMAGE_TEST_2));
         JSONObject actualObject = getTextFromImage.getJsonObject();
         JsonParser jsonParser = new JsonParser();
         JSONObject expectedJson = returnJson("correctJson.json");
         JsonElement jsonElementActual = jsonParser.parse(actualObject.toString());
         JsonElement jsonElementExpected = jsonParser.parse(expectedJson.toString());
         Map<String, MapDifference.ValueDifference<Object>> diffMap = getMapDiffrence(jsonElementActual, jsonElementExpected);
-//        Type type = new TypeToken<Map<String, Object>>(){}.getType();
-//        Gson gson = new Gson();
-//        Map<String, Object> leftMap = gson.fromJson(jsonElement,type);
-//        Map<String, Object> rightMap = gson.fromJson(jsonElement1, type);
-//        MapDifference<String, Object> difference = Maps.difference(leftMap, rightMap);
-//        Map<String, MapDifference.ValueDifference<Object>> res1 = difference.entriesDiffering();
         assertEquals(diffMap.size(),1); ;
     }
 
     @Test
     void test_compareErrorJson() throws IOException {
-        getTextFromImage.getConnection(new URL(StringUtils.IMAGE_URL + "https://i.imgur.com/QYKhr3.gif"));
+        getTextFromImage.getConnection(new URL(StringUtils.IMAGE_URL + StringForTets.IMAGE_TEST_ERROR));
         JSONObject jsonObject = getTextFromImage.getJsonObject();
         JSONObject jsonObject1 = returnJson("errorJson.json");
         assertEquals(jsonObject1.toString(),jsonObject.toString());

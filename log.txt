@@ -113,3 +113,57 @@ Unable to detect the file extension, or the file extension is incorrect, and no 
 2021-04-02 16:06:06: processing the plate number
 2021-04-02 16:11:36: processing the plate number
 2021-04-02 16:11:54: processing the plate number
+2021-04-02 17:34:44: processing the plate number
+2021-04-02 17:35:05: processing the plate number
+2021-04-02 17:35:17: processing the plate number
+2021-04-02 17:35:36: processing the plate number
+2021-04-02 17:36:20: processing the plate number
+2021-04-02 17:37:03: Waiting for a car to show
+2021-04-02 17:39:22: Waiting for a car to show
+2021-04-02 18:25:28: Waiting for a car to show
+2021-04-02 18:25:33: New car arrived
+2021-04-02 18:25:34: processing the plate number
+2021-04-02 18:25:36: processing the plate number
+2021-04-02 18:25:48: got the plate number20-260-22
+2021-04-02 18:25:55:20-260-22 - checking if license plate is valid
+2021-04-02 18:25:55:20-260-22 - return code is:2
+2021-04-02 18:27:54:20-260-22 - Code:2, You do not have any letters on your license plate - you cannot enter the parking lot.
+2021-04-02 18:27:54: Waiting for a car to show
+2021-04-02 18:27:56: New car arrived
+2021-04-02 18:27:56: processing the plate number
+2021-04-02 18:27:59: processing the plate number
+2021-04-02 18:28:15: got the plate numberGD 24560
+2021-04-02 18:28:19:GD 24560 - checking if license plate is valid
+2021-04-02 18:28:19:GD 24560 - return code is:3
+2021-04-02 18:28:56:GD 24560 - car license plate is valid, opening door...
+2021-04-02 18:28:56: Waiting for a car to show
+2021-04-02 18:29:11: New car arrived
+2021-04-02 18:29:11: processing the plate number
+2021-04-02 18:29:13: processing the plate number
+2021-04-02 18:29:15: got the plate numberGD 24560
+2021-04-02 18:29:15:GD 24560 - checking if license plate is valid
+2021-04-02 18:29:15:GD 24560 - return code is:3
+2021-04-02 18:29:20:GD 24560 - car license plate is valid, opening door...
+2021-04-02 18:29:39: Waiting for a car to show
+2021-04-02 18:29:57: New car arrived
+2021-04-02 18:30:01: processing the plate number
+2021-04-02 18:30:01: processing the plate number
+2021-04-02 18:30:04: got the plate numberGD 24560
+2021-04-02 18:30:04:GD 24560 - checking if license plate is valid
+2021-04-02 18:30:04:GD 24560 - return code is:3
+2021-04-02 18:30:05:GD 24560 - car license plate is valid, opening door...
+2021-04-02 18:30:05: Waiting for a car to show
+2021-04-02 18:42:46: processing the plate number
+2021-04-02 18:43:14: processing the plate number
+2021-04-02 18:44:28: processing the plate number
+2021-04-02 18:45:12: processing the plate number
+2021-04-02 18:53:53: Waiting for a car to show
+2021-04-02 18:53:56: New car arrived
+2021-04-02 18:53:56: processing the plate number
+2021-04-02 18:53:56: processing the plate number
+2021-04-02 18:54:00: got the plate numberGR-PLATE6
+2021-04-02 18:54:00:GR-PLATE6 - checking if license plate is valid
+2021-04-02 18:54:00:GR-PLATE6 - return code is:0
+2021-04-02 18:54:00:GR-PLATE6 - new entry on the DB for plate:GR-PLATE6
+2021-04-02 18:54:00:GR-PLATE6 - Code:0, Public transportation vehicle - you cannot enter the parking lot.
+2021-04-02 18:54:00: Waiting for a car to show

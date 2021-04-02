@@ -17,7 +17,7 @@ public class GetTextFromImage {
 
     public String getTextFromImageAPI(String imageURL) throws SomethingWrongExcepction {
         String lp = "";
-        int responseCode=-1;
+        int responseCode = -1;
         try {
             Log.getInstance().WriteToLogFile("processing the plate number");
             responseCode = getResponseCode(imageURL);
@@ -43,9 +43,8 @@ public class GetTextFromImage {
 
                 }
 
-            }
-            else{
-                Log.getInstance().WriteToLogFile(String.format("%s:%d",StringUtils.WRONG_RESPONSE_CODE,responseCode));
+            } else {
+                Log.getInstance().WriteToLogFile(String.format("%s:%d", StringUtils.WRONG_RESPONSE_CODE, responseCode));
                 throw new SomethingWrongExcepction(StringUtils.SOMETHING_WENT_WRONG);
             }
         } catch (IOException e) {

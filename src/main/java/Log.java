@@ -3,10 +3,12 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.sql.Timestamp;
 import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class Log {
     private static Log log = null;
     private final static SimpleDateFormat timeAndDate = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+    private final static SimpleDateFormat currentDate = new SimpleDateFormat("yyyy-MM-dd");
     private static File file = null;
     private static String lp;
 
@@ -47,10 +49,17 @@ public class Log {
         }
     }
 
-    public static String getTimeStamp() {
+    public static Timestamp getTimeStamp() {
         Timestamp timestamp = new Timestamp(System.currentTimeMillis());
-        return timeAndDate.format(timestamp);
+        return timestamp;
     }
+
+    public static Date getCurrentDate() {
+        Date date = new Date();
+        currentDate.format(date);
+        return date;
+    }
+
 
     public static String getlp() {
         return lp;

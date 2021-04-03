@@ -10,7 +10,9 @@ import org.json.JSONException;
 import org.json.JSONObject;
 import org.junit.Assert;
 import org.junit.Before;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import org.junit.runner.RunWith;
 
 import javax.net.ssl.HttpsURLConnection;
 import java.io.IOException;
@@ -25,6 +27,7 @@ import java.util.Map;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTimeout;
 
+@DisplayName("Get Text From Image test")
 class GetTextFromImageTest {
 
     private GetTextFromImage getTextFromImage = new GetTextFromImage();
@@ -80,7 +83,7 @@ class GetTextFromImageTest {
         JsonElement jsonElementActual = jsonParser.parse(actualObject.toString());
         JsonElement jsonElementExpected = jsonParser.parse(expectedJson.toString());
         Map<String, MapDifference.ValueDifference<Object>> diffMap = getMapDiffrence(jsonElementActual, jsonElementExpected);
-        assertEquals(diffMap.size(),1); ;
+        Assert.assertTrue(diffMap.size()==1||diffMap.size()==0); //check if only the ProcessingTimeInMilliseconds is different
     }
 
     @Test
@@ -99,7 +102,7 @@ class GetTextFromImageTest {
     }
 
     private JSONObject returnJson(String path) throws IOException, JSONException {
-        String filename = "C:\\Users\\Danielle\\IdeaProjects\\MoonActive-Test\\src\\test\\java\\"+ path;
+        String filename = StringForTets.PATH + path;
         JSONObject jsonObject = parseJSONFile(filename);
         return jsonObject;
     }

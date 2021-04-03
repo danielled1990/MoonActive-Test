@@ -176,3 +176,12 @@ Unable to detect the file extension, or the file extension is incorrect, and no 
 2021-04-03 12:19:22:GD 24560 - new entry on the DB for plate:GD 24560
 2021-04-03 12:19:22:GD 24560 - car license plate is valid, opening door...
 2021-04-03 12:19:22: Waiting for a car to show
+2021-04-03 12:35:53: Waiting for a car to show
+2021-04-03 12:36:38: processing the plate number
+2021-04-03 12:37:41: processing the plate number
+2021-04-03 12:38:08: processing the plate number
+2021-04-03 12:38:40: processing the plate number
+2021-04-03 12:40:04: processing the plate number
+2021-04-03 12:53:09: processing the plate number
+2021-04-03 16:15:39: processing the plate number
+2021-04-03 16:19:13: processing the plate number

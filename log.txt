@@ -167,3 +167,12 @@ Unable to detect the file extension, or the file extension is incorrect, and no 
 2021-04-02 18:54:00:GR-PLATE6 - new entry on the DB for plate:GR-PLATE6
 2021-04-02 18:54:00:GR-PLATE6 - Code:0, Public transportation vehicle - you cannot enter the parking lot.
 2021-04-02 18:54:00: Waiting for a car to show
+2021-04-03 12:19:21: New car arrived
+2021-04-03 12:19:21: processing the plate number
+2021-04-03 12:19:21: processing the plate number
+2021-04-03 12:19:22: got the plate numberGD 24560
+2021-04-03 12:19:22:GD 24560 - checking if license plate is valid
+2021-04-03 12:19:22:GD 24560 - return code is:3
+2021-04-03 12:19:22:GD 24560 - new entry on the DB for plate:GD 24560
+2021-04-03 12:19:22:GD 24560 - car license plate is valid, opening door...
+2021-04-03 12:19:22: Waiting for a car to show

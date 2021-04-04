@@ -10,11 +10,21 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 
+/**
+ * main logic this class has the method getTextFromImageAPI, this method getting the text from the API
+ * convert it to a jsonObject and in the end get from the jsonObject the license plate number as string
+ * or trigger an exception if the API bring an error.
+ */
 public class GetTextFromImage {
     private URL url = null;
     private HttpsURLConnection con = null;
 
 
+    /**
+     * @param imageURL
+     * @return
+     * @throws SomethingWrongExcepction
+     */
     public String getTextFromImageAPI(String imageURL) throws SomethingWrongExcepction {
         String lp = "";
         int responseCode = -1;
@@ -54,6 +64,11 @@ public class GetTextFromImage {
         return lp;
     }
 
+    /**
+     * @param imageURL
+     * @return
+     * @throws IOException
+     */
     public int getResponseCode(String imageURL) throws IOException {
         Log.getInstance().WriteToLogFile("processing the plate number");
         url = getUrl(imageURL);
@@ -64,6 +79,10 @@ public class GetTextFromImage {
         return responseCode;
     }
 
+    /**
+     * @return
+     * @throws IOException
+     */
     public JSONObject getJsonObject() throws IOException {
         BufferedReader in = new BufferedReader(new InputStreamReader(
                 con.getInputStream()));
@@ -78,11 +97,21 @@ public class GetTextFromImage {
         return jsonObject;
     }
 
+    /**
+     * @param url
+     * @return
+     * @throws IOException
+     */
     public HttpsURLConnection getConnection(URL url) throws IOException {
         con = (HttpsURLConnection) url.openConnection();
         return con;
     }
 
+    /**
+     * @param imageURL
+     * @return
+     * @throws MalformedURLException
+     */
     public URL getUrl(String imageURL) throws MalformedURLException {
         url = new URL(StringUtils.IMAGE_URL + imageURL);
         return url;

@@ -24,6 +24,9 @@ import java.util.Map;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.fail;
 
+/**
+ * tests for the class GetTextFromImage
+ */
 @DisplayName("Get Text From Image test")
 class GetTextFromImageTest {
 
@@ -35,6 +38,9 @@ class GetTextFromImageTest {
 
     }
 
+    /**
+     * checks if the response code is different than 200
+     */
     @Test()
     void test_checkResponseCode() {
         int responseCode = 0;
@@ -46,6 +52,9 @@ class GetTextFromImageTest {
         assertEquals(200, responseCode);
     }
 
+    /**
+     * check if the URL valid and that nothing has changed
+     */
     @Test()
     void test_checkURL() {
         try {
@@ -59,38 +68,77 @@ class GetTextFromImageTest {
 
     }
 
+    /**
+     * @throws IOException
+     * checking a good json (that brings a text from the image)
+     */
     @Test
-    void test_compareGoodJson() throws IOException {
-        getTextFromImage.getConnection(new URL(StringUtils.IMAGE_URL + StringForTests.IMAGE_TEST_2));
-        JSONObject actualObject = getTextFromImage.getJsonObject();
-        JsonParser jsonParser = new JsonParser();
-        JSONObject expectedJson = returnJson("correctJson.json");
-        JsonElement jsonElementActual = jsonParser.parse(actualObject.toString());
-        JsonElement jsonElementExpected = jsonParser.parse(expectedJson.toString());
-        Map<String, MapDifference.ValueDifference<Object>> diffMap = getMapDiffrence(jsonElementActual, jsonElementExpected);
-        Assert.assertTrue(diffMap.size() == 1 || diffMap.size() == 0); //check if only the ProcessingTimeInMilliseconds is different
+    void test_compareGoodJson()  {
+        try {
+            JSONObject actualObject = getTextFromImage.getJsonObject();
+            JsonParser jsonParser = new JsonParser();
+            JSONObject expectedJson = returnJson("correctJson.json");
+            JsonElement jsonElementActual = jsonParser.parse(actualObject.toString());
+            JsonElement jsonElementExpected = jsonParser.parse(expectedJson.toString());
+            Map<String, MapDifference.ValueDifference<Object>> diffMap = getMapDiffrence(jsonElementActual, jsonElementExpected);
+            Assert.assertTrue(diffMap.size() == 1 || diffMap.size() == 0); //check if only the ProcessingTimeInMilliseconds is different
+            getTextFromImage.getConnection(new URL(StringUtils.IMAGE_URL + StringForTests.IMAGE_TEST_2));
+        } catch (IOException e) {
+            fail(String.format("%s, %s %s", IOException.class.getName(), StringForTests.SOMETHING_WENT_WRONG, e.getMessage()));
+        }
+
     }
 
+    /**
+     * @throws IOException
+     * checking a json with error (that brings an error from the api)
+     */
     @Test
-    void test_compareErrorJson() throws IOException {
-        getTextFromImage.getConnection(new URL(StringUtils.IMAGE_URL + StringForTests.IMAGE_TEST_ERROR));
-        JSONObject jsonObject = getTextFromImage.getJsonObject();
-        JSONObject jsonObject1 = returnJson("errorJson.json");
-        assertEquals(jsonObject1.toString(), jsonObject.toString());
+    void test_compareErrorJson()  {
+        try {
+            getTextFromImage.getConnection(new URL(StringUtils.IMAGE_URL + StringForTests.IMAGE_TEST_ERROR));
+            JSONObject jsonObject = getTextFromImage.getJsonObject();
+            JSONObject jsonObject1 = returnJson("errorJson.json");
+            assertEquals(jsonObject1.toString(), jsonObject.toString());
+        } catch (IOException e) {
+            fail(String.format("%s, %s %s", IOException.class.getName(), StringForTests.SOMETHING_WENT_WRONG, e.getMessage()));
+        }
+
     }
 
-
+    //////////////////HELPERS////////////////////
+    /**
+     * @param filename
+     * @return
+     * @throws JSONException
+     * @throws IOException
+     * parsing json to JSONObject
+     */
     private JSONObject parseJSONFile(String filename) throws JSONException, IOException {
         String content = new String(Files.readAllBytes(Paths.get(filename)));
         return new JSONObject(content);
     }
 
+    /**
+     * @param path
+     * @return
+     * @throws IOException
+     * @throws JSONException
+     * reading json from a file
+     */
     private JSONObject returnJson(String path) throws IOException, JSONException {
         String filename = StringForTests.PATH + path;
         JSONObject jsonObject = parseJSONFile(filename);
         return jsonObject;
     }
 
+    /**
+     * @param jsonElement
+     * @param jsonElement1
+     * @return
+     * compering two jsons by their tree.
+     * the only different, if any, is in the time.
+     */
     private Map<String, MapDifference.ValueDifference<Object>> getMapDiffrence(JsonElement jsonElement, JsonElement jsonElement1) {
         Type type = new TypeToken<Map<String, Object>>() {
         }.getType();

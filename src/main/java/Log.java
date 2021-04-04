@@ -5,6 +5,10 @@ import java.sql.Timestamp;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+/**
+ * this class is a singelton class, the Log class writes each of the steps to t a log file.
+ * each line is written with a time step and a text that tell us what happened
+ */
 public class Log {
     private static Log log = null;
     private final static SimpleDateFormat timeAndDate = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
@@ -15,6 +19,9 @@ public class Log {
     private Log() {
     }
 
+    /**
+     * @return
+     */
     public static Log getInstance() {
 
         if (log == null) {
@@ -26,6 +33,10 @@ public class Log {
         return log;
     }
 
+    /**
+     * @param lp
+     * @param text
+     */
     public static void WriteToLogFile(String lp, String text) {
         Timestamp timestamp = new Timestamp(System.currentTimeMillis());
         try {
@@ -38,6 +49,9 @@ public class Log {
         }
     }
 
+    /**
+     * @param text
+     */
     public static void WriteToLogFile(String text) {
         Timestamp timestamp = new Timestamp(System.currentTimeMillis());
         try {
@@ -49,6 +63,9 @@ public class Log {
         }
     }
 
+    /**
+     * @return
+     */
     public static Timestamp getTimeStamp() {
         Timestamp timestamp = new Timestamp(System.currentTimeMillis());
         return timestamp;

@@ -1,5 +1,8 @@
 package StringForTests;
 
+/**
+ * String for the tests
+ */
 public class StringForTests {
 
     public static final String IMAGE_TEST_1 = "https://i.imgur.com/Atb2xiW.png";

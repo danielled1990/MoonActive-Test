@@ -1,3 +1,6 @@
+/**
+ * strings that are needed for the program to run
+ */
 public class StringUtils {
     //api
     public static String IMAGE_URL = "https://api.ocr.space/parse/imageurl?apikey=870a01303588957d&isOverlayRequired=true&url=";

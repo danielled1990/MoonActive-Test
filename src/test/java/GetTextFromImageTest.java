@@ -75,6 +75,7 @@ class GetTextFromImageTest {
     @Test
     void test_compareGoodJson()  {
         try {
+            getTextFromImage.getConnection(new URL(StringUtils.IMAGE_URL + StringForTests.IMAGE_TEST_2));
             JSONObject actualObject = getTextFromImage.getJsonObject();
             JsonParser jsonParser = new JsonParser();
             JSONObject expectedJson = returnJson("correctJson.json");

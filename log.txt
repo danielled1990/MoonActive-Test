@@ -35,3 +35,44 @@
 2021-04-04 18:11:23:GR-PLATE6 - new entry on the DB for plate:GR-PLATE6
 2021-04-04 18:11:23:GR-PLATE6 - Code:0, Public transportation vehicle - you cannot enter the parking lot.
 2021-04-04 18:11:23: Waiting for a car to show
+2021-04-04 18:53:35: Waiting for a car to show
+2021-04-04 18:53:37: New car arrived
+2021-04-04 18:53:37: processing the plate number
+2021-04-04 18:53:37: processing the plate number
+2021-04-04 18:53:40: got the plate number20-260-22
+2021-04-04 18:53:40:20-260-22 - checking if license plate is valid
+2021-04-04 18:53:40:20-260-22 - return code is:2
+2021-04-04 18:53:41:20-260-22 - new entry on the DB for plate:20-260-22
+2021-04-04 18:53:41:20-260-22 - Code:2, You do not have any letters on your license plate - you cannot enter the parking lot.
+2021-04-04 18:53:41: Waiting for a car to show
+2021-04-04 18:53:43: New car arrived
+2021-04-04 18:53:43: processing the plate number
+2021-04-04 18:53:43: processing the plate number
+2021-04-04 18:53:44: got the plate numberERAÉ87TL
+2021-04-04 18:53:44:ERAÉ87TL - checking if license plate is valid
+2021-04-04 18:53:44:ERAÉ87TL - return code is:1
+2021-04-04 18:53:44:ERAÉ87TL - new entry on the DB for plate:ERAÉ87TL
+2021-04-04 18:53:44:ERAÉ87TL - Code:1, Law enforcement vehicle - you cannot enter the parking lot.
+2021-04-04 18:53:44: Waiting for a car to show
+2021-04-04 18:53:48: New car arrived
+2021-04-04 18:53:48: processing the plate number
+2021-04-04 18:53:48: processing the plate number
+2021-04-04 18:53:49: got the plate numberGD 24560
+2021-04-04 18:53:49:GD 24560 - checking if license plate is valid
+2021-04-04 18:53:49:GD 24560 - return code is:3
+2021-04-04 18:53:49:GD 24560 - new entry on the DB for plate:GD 24560
+2021-04-04 18:53:49:GD 24560 - car license plate is valid, opening door...
+2021-04-04 18:53:49: Waiting for a car to show
+2021-04-04 18:53:54: New car arrived
+2021-04-04 18:53:54: processing the plate number
+2021-04-04 18:53:54: processing the plate number
+2021-04-04 18:53:55: got the plate numberGR-PLATE6
+2021-04-04 18:53:55:GR-PLATE6 - checking if license plate is valid
+2021-04-04 18:53:55:GR-PLATE6 - return code is:0
+2021-04-04 18:53:55:GR-PLATE6 - new entry on the DB for plate:GR-PLATE6
+2021-04-04 18:53:55:GR-PLATE6 - Code:0, Public transportation vehicle - you cannot enter the parking lot.
+2021-04-04 18:53:55: Waiting for a car to show
+2021-04-04 19:47:23: processing the plate number
+2021-04-04 19:47:40: processing the plate number
+2021-04-04 19:48:07: processing the plate number
+2021-04-04 19:48:52: processing the plate number
